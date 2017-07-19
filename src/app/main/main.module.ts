@@ -2,10 +2,11 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { MainComponent }  from './main.component';
-import { NavbarComponent } from './navbar/navbar.component'
+import { NavbarModule } from './navbar/navbar.module';
 
 @NgModule({
-  imports:      [ BrowserModule ],
+  imports:      [ BrowserModule, NavbarModule ],
+  exports:      [ MainComponent ],
   declarations: [ MainComponent ],
   bootstrap:    [ MainComponent ]
 })
